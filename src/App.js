@@ -99,7 +99,7 @@ class App extends Component {
     // console.log("click");
     this.setState({ imageUrl: this.state.input });
 
-    fetch("http://localhost:3000/ImageUrl", {
+    fetch("https://facerecognition1234.herokuapp.com/ImageUrl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
